@@ -1,0 +1,6 @@
+{
+  "name": "My Vet",
+  "description": "Website moderno, profissional e responsivo para a My Vet Clínica Veterinária no Morumbi, focado em agendamentos e atendimento humanizado.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
