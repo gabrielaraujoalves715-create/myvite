@@ -29,7 +29,7 @@ export default function TrustSection() {
       {/* Subtle floating paw prints layer */}
       <PawPrintBackground variant="teal" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl lg:max-w-6xl mx-auto px-4 sm:px-6 lg:px-6 relative z-10">
         {/* Section header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
@@ -41,13 +41,13 @@ export default function TrustSection() {
         </div>
 
         {/* Central visual grid (5 items with standard Layout balance) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="trust-grid">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 lg:gap-6 xl:gap-7" id="trust-grid">
           {trustItems.map((item, idx) => {
             return (
               <div
                 key={item.title}
-                className={`bg-white rounded-xl p-6 border border-slate-200/70 shadow-sm hover:border-[#E87800]/50 hover:shadow-md transition-colors duration-200 ${
-                  idx === 4 ? "md:col-span-2 lg:col-span-1" : ""
+                className={`bg-white rounded-xl lg:rounded-2xl p-6 lg:p-7 border border-slate-200/70 lg:border-gray-100 shadow-sm hover:border-[#E87800]/50 hover:shadow-md transition-colors duration-200 lg:col-span-2 lg:h-full ${
+                  idx === 3 ? "lg:col-start-2" : idx === 4 ? "md:col-span-2" : ""
                 }`}
                 id={`trust-card-${idx}`}
               >
