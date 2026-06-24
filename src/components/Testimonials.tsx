@@ -6,25 +6,25 @@ export default function Testimonials() {
       name: "Fernanda Miranda",
       initials: "FM",
       role: "Tutora de Pet",
-      text: "A primeira coisa que observamos foi a facilidade para estacionar, coisa rara nos dias de hoje. O local é bem amplo e arejado. O cuidado com os cães já começa a se refletir no atendimento aos proprietários, fomos atendidos pela Camila, super simpática e atenciosa. Ficamos aguardando na recepção e vendo todo o cuidado e carinho pelo nosso pet <3",
+      text: "O local é amplo, arejado e com facilidade para estacionar. Fomos atendidos com muita atenção e vimos cuidado real com o nosso pet.",
       rating: 5,
-      accent: "bg-teal-50 text-teal-700",
+      accent: "bg-orange-50 text-slate-800",
     },
     {
       name: "Dani Paiva",
       initials: "DP",
       role: "Tutora do bulldog francês Floki",
-      text: "Tenho um bulldog francês, o nome dele é Floki. Ele foi muito bem tratado em todas as consultas, exames e na castração. Veterinários de ótima capacitação. Recepcionista atenciosa e simpática. Super indico essa clínica.",
+      text: "O Floki foi muito bem tratado nas consultas, exames e castração. A equipe foi atenciosa e transmitiu segurança em todo o processo.",
       rating: 5,
-      accent: "bg-teal-50 text-teal-700",
+      accent: "bg-orange-50 text-slate-800",
     },
     {
       name: "Luana Gomes",
       initials: "LG",
       role: "Tutora de Pet",
-      text: "Melhor clinica vet da região, atendimento excepcional meninas da recepção desde o primeiro contato pelo telefone ao presencial. Valor da consulta 80,00 o mais em conta que encontrei. Obrigada por tudo meu Dog agora está em ótimas mãos!",
+      text: "Atendimento excelente desde o primeiro contato até a consulta presencial. Meu dog ficou em ótimas mãos.",
       rating: 5,
-      accent: "bg-teal-50 text-teal-700",
+      accent: "bg-orange-50 text-slate-800",
     },
   ];
 
@@ -50,23 +50,24 @@ export default function Testimonials() {
           {reviews.map((review, idx) => (
             <div
               key={review.name}
-              className="bg-slate-50/50 rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between"
+              className="bg-white rounded-xl p-6 border border-slate-200/70 shadow-sm hover:border-[#E87800]/50 hover:shadow-md transition-colors duration-200 flex flex-col justify-between"
               id={`testimonial-card-${idx}`}
             >
-              <div className="space-y-5">
+              <div className="space-y-4">
+                <div className="w-7 h-0.5 bg-[#E87800] rounded-full" />
                 {/* Testimonial Text */}
-                <p className="text-slate-700 text-sm leading-relaxed italic">
+                <p className="text-slate-700 text-sm leading-relaxed">
                   "{review.text}"
                 </p>
               </div>
 
               {/* Author Info */}
-              <div className="flex items-center gap-4 pt-6 mt-6 border-t border-slate-100">
-                <div className={`w-11 h-11 rounded-full flex items-center justify-center font-bold text-sm select-none ${review.accent}`}>
+              <div className="flex items-center gap-3 pt-5 mt-5 border-t border-slate-100">
+                <div className={`w-9 h-9 rounded-full flex items-center justify-center font-semibold text-xs select-none ${review.accent}`}>
                   {review.initials}
                 </div>
                 <div>
-                  <h4 className="font-sans font-bold text-sm text-slate-900">
+                  <h4 className="font-sans font-semibold text-sm text-slate-900">
                     {review.name}
                   </h4>
                 </div>

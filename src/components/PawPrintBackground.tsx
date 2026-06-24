@@ -1,14 +1,16 @@
 import React from "react";
 
 interface PawPrintBackgroundProps {
-  variant?: "light" | "dark" | "teal" | "hero-teal";
+  variant?: "light" | "dark" | "teal" | "hero-teal" | "orange";
 }
 
 // Elegant custom vector paw print
-const PawPrintIcon = ({ variant = "light" }: { variant?: "light" | "dark" | "teal" | "hero-teal" }) => {
+const PawPrintIcon = ({ variant = "light" }: { variant?: "light" | "dark" | "teal" | "hero-teal" | "orange" }) => {
   let colorClass = "text-slate-400/80";
   if (variant === "teal") {
     colorClass = "text-teal-600/80";
+  } else if (variant === "orange") {
+    colorClass = "text-[#E87800]/80";
   } else if (variant === "hero-teal") {
     colorClass = "text-teal-600";
   } else if (variant === "dark") {
@@ -151,7 +153,7 @@ const trailRightToBottom: WalkStep[] = [
 export default function PawPrintBackground({ variant = "light" }: PawPrintBackgroundProps) {
   // Select maximum opacity depending on the background style
   const minOpacity = variant === "dark" ? "0.12" : "0.10";
-  const maxOpacity = variant === "teal" ? "0.55" : variant === "dark" ? "0.45" : variant === "hero-teal" ? "0.35" : "0.45";
+  const maxOpacity = variant === "teal" ? "0.55" : variant === "orange" ? "0.28" : variant === "dark" ? "0.45" : variant === "hero-teal" ? "0.35" : "0.45";
 
   return (
     <>

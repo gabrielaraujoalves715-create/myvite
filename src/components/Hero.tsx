@@ -46,9 +46,9 @@ export default function Hero() {
 
             {/* Main Title */}
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.2] sm:leading-[1.1] text-center" id="hero-title">
-              <span className="block mb-1 sm:inline">Cuidado completo</span>{" "}
+              <span className="block mb-1 sm:inline">Cuidado veterinario completo</span>{" "}
               <span className="block mb-1 sm:inline">para <span className="text-teal-600 italic font-semibold">o seu pet</span></span>{" "}
-              <span className="block sm:inline">no Morumbi</span>
+
             </h1>
 
             {/* Subtitle */}

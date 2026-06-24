@@ -64,6 +64,22 @@
 			"isBackground": false,
 			"problemMatcher": [],
 			"group": "build"
+		},
+		{
+			"label": "npm build cmd",
+			"type": "shell",
+			"command": "cmd /c npm run build",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "npm build cmd",
+			"type": "shell",
+			"command": "cmd /c npm run build",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
 		}
 	]
 }
